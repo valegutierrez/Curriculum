@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: rgb(233, 233, 233);
+}
+.profile {
+    position: absolute;
+    top: 10vh;
+    margin: 0 10% 0 10%;
+    height: auto;
+}
+.row {
+    background-color: white;
+    width: 80vw;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+}
+#title {
+    height: 16.5vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+}
+h1 {
+    position: absolute;
+    top: 10vh;
+}
+img {
+    position: absolute;
+    left: 30%;
+    border-radius: 50%;
+    border: 10px solid rgb(233, 233, 233);
+    top: -150px;
+    width: 40%;
+}
+#title span {
+    color: orangered;
+}
+#content {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#content h2 {
+    font-weight: 400;
+    color: orangered;
+    text-transform: uppercase;
+}
+.speech-bubble {
+    background-color: rgb(233, 233, 233);
+    width: 70vw;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.bar {
+    background-color: orangered;
+    color: white;
+    font-weight: 400;
+    padding: 5px 0 5px 5px;
+    text-transform: uppercase;
+}
