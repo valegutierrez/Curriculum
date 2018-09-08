@@ -5,6 +5,7 @@
     <title>Desafío 6</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="profile">
@@ -40,28 +41,105 @@
             </div>
             <div class="row">
                 <h2> // Educación</h2>
-                <p><b>2012</b></p>
-                <p class="speech-bubble">
-                    <b>I was born in Katowice</b>
-                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aspernatur et ut eveniet amet beatae corrupti explicabo.
-                </p>
-                <p><b>1986</b></p>
-                <p class="speech-bubble">
-                    <b>I was born in Katowice</b>
-                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aspernatur et ut eveniet amet beatae corrupti explicabo.
-                </p>
+                <div class="grid">
+                    <div class="nested-row bubbles">
+                        <p><b>2012</b></p>
+                        <p class="triangle-left"></p>
+                        <p class="speech-bubble">
+                            <b>I was born in Katowice</b>
+                            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aspernatur et ut eveniet amet beatae corrupti explicabo.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="nested-row bubbles">
+                        <p><b>1986</b></p>
+                        <p class="triangle-left"></p>
+                        <p class="speech-bubble">
+                            <b>I was born in Katowice</b>
+                            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aspernatur et ut eveniet amet beatae corrupti explicabo.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <h2> // Skills</h2>
-                <p class="bar">Python</p>
-                <p class="bar">Html</p>
-                <p class="bar">Css</p>
-                <p class="bar">Js</p>
-                <p class="bar">Php</p>
+                <p class="bar" id="perc100">Python</p>
+                <p class="bar" id="perc90">Html</p>
+                <p class="bar" id="perc70">Css</p>
+                <p class="bar" id="perc50">Js</p>
+                <p class="bar" id="perc30">Php</p>
             </div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div class="row">
+                <h2> // Experiencia</h2>
+                <div class="grid">
+                    <div class="nested-row bubbles">
+                        <p><b>Google</b>
+                            <br>
+                            <span id="year">
+                                2013-2014
+                            </span>
+                        </p>
+                        <p class="experience-content">
+                            <b>Front-end developer / PHP programmer</b>
+                            <br>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque repudiandae cumque inventore animi numquam fugiat magni blanditiis, voluptatibus asperiores quos eius at dolor voluptas non corrupti? Eligendi, reprehenderit iure! Qui!
+                        </p>
+                    </div>
+                    <div class="nested-row bubbles">
+                        <p>
+                            <b>Google</b>
+                            <br>
+                            <span id="year">
+                                2013-2014
+                            </span>
+                        </p>
+                        <p class="experience-content">
+                            <b>Front-end developer / PHP programmer</b>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores, provident nesciunt, officiis ratione incidunt explicabo placeat possimus culpa, totam odio numquam ex nam? Quis possimus assumenda voluptate quibusdam aliquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2> // Idiomas</h2>
+                <div class="grid">
+                    <div class="nested-row line">
+                        <p>
+                            Inglés
+                            <div class="stars">
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="nested-row line">
+                        <p>
+                            Español
+                            <div class="stars">
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star colored"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2> // Hobbies</h2>
+                <span class="tag">Fotografía</span>
+                <span class="tag">Deporte</span>
+                <span class="tag">Música</span>
+            </div>
+            <footer>
+                <hr>
+                <p>Curso Desarrollo Full-Stack G16</p>
+            </footer>
         </div>
     </div>
 </body>

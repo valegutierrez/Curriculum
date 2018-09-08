@@ -9,14 +9,23 @@ body {
     height: auto;
 }
 .row {
+    position: relative;
     background-color: white;
-    width: 80vw;
-    height: auto;
+    width: 100%;
     box-sizing: border-box;
-    padding: 0 10px 0 10px;
+    padding: 2vw;
+}
+.nested-row {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vw 0 2vw 0;
+}
+.row #year {
+    font-size: 0.7em;
 }
 #title {
-    height: 16.5vh;
+    height: 17vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -24,15 +33,18 @@ body {
 }
 h1 {
     position: absolute;
-    top: 10vh;
+    left: 0;
+    right: 0;
+    top: 12vh;
+    font-size: 2vw;
+    padding: 0 2vw 0 2vw;
 }
 img {
-    position: absolute;
-    left: 30%;
+    position: relative;
     border-radius: 50%;
     border: 10px solid rgb(233, 233, 233);
-    top: -150px;
-    width: 40%;
+    top: -10vh;
+    width: 20vh;
 }
 #title span {
     color: orangered;
@@ -48,9 +60,26 @@ img {
     color: orangered;
     text-transform: uppercase;
 }
+.grid {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.grid p {
+    display: table-cell;
+}
+.triangle-left {
+    margin-left: 10vw;
+	border-top: 20px solid transparent;
+	border-right: 20px solid rgb(233, 233, 233);
+	border-bottom: 20px solid transparent;
+}
+.bubbles p {
+    float: left;
+}
 .speech-bubble {
+    margin: 0;
     background-color: rgb(233, 233, 233);
-    width: 70vw;
+    width: 60vw;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -61,4 +90,49 @@ img {
     font-weight: 400;
     padding: 5px 0 5px 5px;
     text-transform: uppercase;
+}
+#perc100 {
+    width: 100%;
+}
+#perc90 {
+    width: 90%;
+}
+#perc70 {
+    width: 70%;
+}
+#perc50 {
+    width: 50%;
+}
+#perc30 {
+    width: 30%;
+}
+.experience-content {
+    margin-left: 10vw;
+    width: 60vw;
+}
+.stars {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.line {
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+.fa-star {
+    color: silver;
+}
+.colored {
+    color: orangered;
+}
+.tag {
+    font-weight: 400;
+    padding: 5px;
+    background-color: crimson;
+    color: white;
+}
+footer {
+    background-color: white;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 2vw;
 }
